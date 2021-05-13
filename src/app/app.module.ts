@@ -9,7 +9,13 @@ import { HeaderComponent } from './header/header.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
 
 @NgModule({
-  declarations: [AppComponent, MonsterListItemComponent, MonsterListComponent, HeaderComponent, SearchBoxComponent],
+  declarations: [
+    AppComponent,
+    MonsterListItemComponent,
+    MonsterListComponent,
+    HeaderComponent,
+    SearchBoxComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
