@@ -1,4 +1,4 @@
-<span
+<span class="spread"
   ><img src="assets/all-icon.jpeg" alt="all-icon" width="50" height="50" />
   <img src="assets/aberration.jpg" alt="aberration" width="50" height="50" />
   <img src="assets/beast.jpg" alt="beast" width="50" height="50" />
@@ -15,11 +15,31 @@
   <img src="assets/plant.jpg" alt="plant" width="50" height="50" />
   <img src="assets/undead.jpg" alt="undead" width="50" height="50" />
 </span>
-<form>
-  <label for="mName">Monster Name</label>
-  <input type="text" id="mName" name="mName" />
-  <label for="challengeRating">Challenge Rating</label>
-  <select name="challengeRating" id="challengeRating">
-    <option value="asdf">asdf</option>
-  </select>
+<form class="spread">
+  <div>
+    <label for="mName">Monster Name</label>
+    <input type="text" id="mName" name="mName" />
+  </div>
+  <div>
+    <label for="challengeRating">Challenge Rating</label>
+    <select name="challengeRating" id="challengeRating">
+      <option value="asdf">asdf</option>
+    </select>
+    <select name="challengeRating" id="challengeRating">
+      <option value="asdf">asdf</option>
+    </select>
+  </div>
+  <div>
+    <label for="size">Size</label>
+    <input type="text" id="size" name="size" />
+  </div>
+  <div>
+    <label for="environment">Environment</label>
+    <input type="text" id="environment" name="environment" />
+  </div>
+  <div>
+    <input type="submit" value="Filter Monsters" />
+    <button>reset all filters</button>
+  </div>
 </form>
+<button class="centered">show advanced filters</button>

@@ -10,12 +10,11 @@ import { Monster } from './models/monster';
 export class AppComponent {
   title = 'DnD';
 
-  public monsters: Monster[] = [];
+  public monsterJSON: MonsterJSON[] = [];
 
   constructor() {}
 
   ngOnInit(): void {
-    this.monsters = [];
     let dndUrl = 'https://www.dnd5eapi.co/api/monsters';
 
     async function fetchMonstersJSON() {
@@ -25,9 +24,9 @@ export class AppComponent {
 
     fetchMonstersJSON().then((monsters: MonsterJSON) => {
       for (const monster of monsters.results) {
-        this.monsters.push(monster as Monster);
+        this.monsterJSON.push(monster as MonsterJSON);
       }
-      console.log('this.monsters: ', this.monsters);
+      //console.log('this.monstersJSON: ', this.monsterJSON);
     });
   }
 }

@@ -2,3 +2,13 @@ input,
 label {
   display: block;
 }
+
+.spread {
+  display: flex;
+  justify-content: space-around;
+}
+.centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
